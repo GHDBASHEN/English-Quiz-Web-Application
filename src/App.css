@@ -1,0 +1,203 @@
+/* Global Styles */
+* {
+  font-family: "Arial", sans-serif; /* Change font-family to your choice */
+}
+body {
+  background-color: #f0f0f0; /* Change background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* App Container */
+.App {
+  background-color: #ffffff; /* Change to a light color or any color of your choice */
+  height: 60vh; /* Adjust height */
+  max-height: 700px; /* Adjust max height */
+  width: 70vw; /* Adjust width */
+  max-width: 900px; /* Adjust max width */
+  border-radius: 20px; /* Adjust border radius */
+  padding: 30px; /* Adjust padding */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); /* Adjust shadow */
+}
+
+/* Button Styles */
+.button,
+.startButton {
+  background: #3498db; /* Change button background color */
+  outline: none;
+  border: none;
+  padding: 12px;
+  border-radius: 6px; /* Adjust border radius */
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #ffffff; /* Change text color */
+}
+
+.button:hover,
+.startButton:hover {
+  background: #2980b9; /* Change hover color */
+}
+
+/* Question Section */
+.questionBox {
+  position: relative;
+  height: 100%;
+  color: #333; /* Change text color */
+}
+
+.questionBox .questionHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middleBox {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Adjust column layout */
+  grid-template-areas: "question option";
+}
+
+.question {
+  grid-area: question;
+}
+
+.question p {
+  font-size: 22px; /* Adjust font size */
+  color: #444; /* Change text color */
+}
+
+.option {
+  grid-area: option;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.option .text {
+  width: 90%;
+  font-size: 18px; /* Adjust font size */
+  border-radius: 10px; /* Adjust border radius */
+  padding: 8px;
+  border: 4px solid #3498db; /* Adjust border color */
+  cursor: pointer;
+  margin-bottom: 10px;
+  background: #ecf0f1; /* Background color */
+}
+
+.option .text:hover {
+  background: #bdc3c7; /* Change hover color */
+}
+
+.selected {
+  background: #3498db; /* Change selected background color */
+  width: 90%;
+  font-size: 18px; /* Adjust font size */
+  border-radius: 10px;
+  padding: 8px;
+  border: 4px solid #3498db; /* Adjust border color */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.option .selected input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.questionBottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.nextBtn {
+  float: right;
+}
+
+/* End Section */
+.endBox {
+  align-items: center;
+  text-align: center;
+  color: #333; /* Change text color */
+}
+
+.trophy {
+  height: 60px; /* Adjust height */
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed; /* Changed to fixed for full screen coverage */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay */
+}
+
+.modal-main {
+  position: relative; /* Changed to relative for proper centering */
+  border-radius: 12px; /* Adjust border radius */
+  padding: 20px; /* Adjust padding */
+  background: #ffffff; /* Change background color */
+  color: #333; /* Change text color */
+  width: 60%; /* Adjust width */
+  max-width: 600px; /* Max width */
+  height: 70%; /* Adjust height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.modalBody {
+  text-align: left;
+}
+
+.modalBody header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px; /* Adjust font size */
+  padding: 12px; /* Adjust padding */
+}
+
+.bg-success {
+  background: #28a745; /* Adjust success color */
+  color: white;
+  padding: 12px;
+  width: 90%;
+  font-size: 14px; /* Adjust font size */
+  font-weight: 500;
+}
+
+.bg-warning {
+  background: #ffc107; /* Adjust warning color */
+  color: black;
+  padding: 12px;
+  width: 90%;
+  font-size: 14px; /* Adjust font size */
+  font-weight: 300;
+}
+
+.bg-danger {
+  background: #dc3545; /* Adjust danger color */
+  color: white;
+  padding: 12px;
+  width: 90%;
+  font-size: 14px; /* Adjust font size */
+  font-weight: 500;
+}
