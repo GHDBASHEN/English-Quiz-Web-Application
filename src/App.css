@@ -3,7 +3,7 @@
   font-family: "Arial", sans-serif; /* Change font-family to your choice */
 }
 body {
-  background-color: #f0f0f0; /* Change background color */
+  background-color: #69e7d2; /* Change background color */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ body {
 
 /* App Container */
 .App {
-  background-color: #ffffff; /* Change to a light color or any color of your choice */
+  background-color: #76e2e7; /* Change to a light color or any color of your choice */
   height: 60vh; /* Adjust height */
   max-height: 700px; /* Adjust max height */
   width: 70vw; /* Adjust width */
@@ -83,14 +83,14 @@ body {
   font-size: 18px; /* Adjust font size */
   border-radius: 10px; /* Adjust border radius */
   padding: 8px;
-  border: 4px solid #3498db; /* Adjust border color */
+  border: 4px solid #6ab1e0; /* Adjust border color */
   cursor: pointer;
   margin-bottom: 10px;
-  background: #ecf0f1; /* Background color */
+  background: #9edae7; /* Background color */
 }
 
 .option .text:hover {
-  background: #bdc3c7; /* Change hover color */
+  background: #3c9cd8; /* Change hover color */
 }
 
 .selected {
@@ -124,7 +124,7 @@ body {
 .endBox {
   align-items: center;
   text-align: center;
-  color: #333; /* Change text color */
+  color: #968484; /* Change text color */
 }
 
 .trophy {
@@ -145,7 +145,7 @@ body {
   position: relative; /* Changed to relative for proper centering */
   border-radius: 12px; /* Adjust border radius */
   padding: 20px; /* Adjust padding */
-  background: #ffffff; /* Change background color */
+  background: #239690; /* Change background color */
   color: #333; /* Change text color */
   width: 60%; /* Adjust width */
   max-width: 600px; /* Max width */
