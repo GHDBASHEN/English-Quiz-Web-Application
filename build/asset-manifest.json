@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/English-Quiz-Web-Application/static/css/main.ca42d4be.css",
-    "main.js": "/English-Quiz-Web-Application/static/js/main.62d017ae.js",
+    "main.css": "/English-Quiz-Web-Application/static/css/main.3bdccb50.css",
+    "main.js": "/English-Quiz-Web-Application/static/js/main.8f7ff340.js",
     "static/js/453.ed3810f9.chunk.js": "/English-Quiz-Web-Application/static/js/453.ed3810f9.chunk.js",
-    "static/media/trophy.png": "/English-Quiz-Web-Application/static/media/trophy.16e6df06d5ae2e4ee3f4.png",
+    "static/media/trophy.png": "/English-Quiz-Web-Application/static/media/trophy.d5210569c0787955f6b3.png",
     "index.html": "/English-Quiz-Web-Application/index.html",
-    "main.ca42d4be.css.map": "/English-Quiz-Web-Application/static/css/main.ca42d4be.css.map",
-    "main.62d017ae.js.map": "/English-Quiz-Web-Application/static/js/main.62d017ae.js.map",
+    "main.3bdccb50.css.map": "/English-Quiz-Web-Application/static/css/main.3bdccb50.css.map",
+    "main.8f7ff340.js.map": "/English-Quiz-Web-Application/static/js/main.8f7ff340.js.map",
     "453.ed3810f9.chunk.js.map": "/English-Quiz-Web-Application/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca42d4be.css",
-    "static/js/main.62d017ae.js"
+    "static/css/main.3bdccb50.css",
+    "static/js/main.8f7ff340.js"
   ]
 }
