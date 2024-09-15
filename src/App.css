@@ -29,12 +29,20 @@ body {
   background: #3498db; /* Change button background color */
   outline: none;
   border: none;
+  margin-top: 20px;
   padding: 12px;
   border-radius: 6px; /* Adjust border radius */
   font-weight: 400;
   letter-spacing: 1px;
   cursor: pointer;
   color: #ffffff; /* Change text color */
+}
+
+.timeInput{
+  background-color: #76e2e7;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 15px;
 }
 
 .button:hover,

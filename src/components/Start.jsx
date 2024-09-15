@@ -31,7 +31,7 @@ const Start = () => {
       <div>
         <div>
           <h1>Start the Quiz</h1>
-          <p>Good luck!</p>
+          <p>Answer the all Questions </p>
           <p>Time:&nbsp;&nbsp;{time}sec</p>
           <section>
             <label htmlFor="">
@@ -53,6 +53,7 @@ const Start = () => {
               sec
             </label>
           </section>
+          
           <button className="startButton" onClick={handleQuizStart}>
             START
           </button>
