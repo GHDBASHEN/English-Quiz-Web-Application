@@ -1,29 +1,184 @@
 {
   "data": [
     {
-      "question": "Which of the following is the major element in earth crust?",
-      "choices": ["Silicon", "Oxygen", "Iron", "Aluminium"],
-      "answer": "Oxygen"
+      "question": "She _____ (go) to the market yesterday.",
+      "choices": ["goes", "gone", "went", "going"],
+      "answer": "went"
     },
     {
-      "question": "Which among the following country is known as “Land of White Elephant”?",
-      "choices": ["India", "Sri Lanka", "UAE", "Thailand"],
-      "answer": "Thailand"
+      "question": "The cat is hiding _____ the table.",
+      "choices": ["on", "in", "under", "over"],
+      "answer": "under"
     },
     {
-      "question": "What is the capital of Austria ?",
-      "choices": ["Graz", "Salzburg", "Innsbruck", "Vienna"],
-      "answer": "Vienna"
+      "question": "He has _____ (write) the letter already.",
+      "choices": ["wrote", "written", "writes", "writing"],
+      "answer": "written"
     },
     {
-      "question": "The term Ground Stroke is associated with which of the following games?",
-      "choices": ["Cricket", "Badminton", "Tennis", "Draughts"],
-      "answer": "Tennis"
+      "question": "The books _____ (be) on the shelf.",
+      "choices": ["is", "are", "was", "were"],
+      "answer": "are"
     },
     {
-      "question": "What is the name of the biggest planet in our solar system ?",
-      "choices": ["Mars", "Jupiter", "Earth", "Mercury"],
-      "answer": "Jupiter"
+      "question": "She runs _____ (fast/fastly) every morning.",
+      "choices": ["fast", "fastly", "quick", "quickly"],
+      "answer": "fast"
+    },
+    {
+      "question": "I _____ (not see) him for a week.",
+      "choices": ["have not seen", "did not saw", "has not seen", "am not seeing"],
+      "answer": "have not seen"
+    },
+    {
+      "question": "If I _____ (be) you, I would go to the party.",
+      "choices": ["am", "was", "were", "been"],
+      "answer": "were"
+    },
+    {
+      "question": "They _____ (play) football when it started to rain.",
+      "choices": ["were playing", "played", "are playing", "had played"],
+      "answer": "were playing"
+    },
+    {
+      "question": "I have lived here _____ five years.",
+      "choices": ["since", "for", "in", "at"],
+      "answer": "for"
+    },
+    {
+      "question": "The project will be completed _____ next week.",
+      "choices": ["by", "in", "on", "at"],
+      "answer": "by"
+    },
+    {
+      "question": "This is the _____ (good) movie I have ever seen.",
+      "choices": ["better", "best", "good", "goodest"],
+      "answer": "best"
+    },
+    {
+      "question": "She speaks English _____ (good/well).",
+      "choices": ["good", "well", "better", "best"],
+      "answer": "well"
+    },
+    {
+      "question": "He _____ (drive) to work every day.",
+      "choices": ["drives", "drove", "driving", "drive"],
+      "answer": "drives"
+    },
+    {
+      "question": "We _____ (finish) the work by the time she arrives.",
+      "choices": ["will finish", "will have finished", "finished", "are finishing"],
+      "answer": "will have finished"
+    },
+    {
+      "question": "She was born _____ 1990.",
+      "choices": ["in", "on", "at", "by"],
+      "answer": "in"
+    },
+    {
+      "question": "_____ (Do/Does) she like pizza?",
+      "choices": ["Do", "Does", "Did", "Is"],
+      "answer": "Does"
+    },
+    {
+      "question": "The food tastes _____ (delicious/deliciously).",
+      "choices": ["delicious", "deliciously", "well", "better"],
+      "answer": "delicious"
+    },
+    {
+      "question": "He _____ (leave) before I arrived.",
+      "choices": ["leaves", "left", "had left", "is leaving"],
+      "answer": "had left"
+    },
+    {
+      "question": "I am looking forward _____ (to hear/to hearing) from you.",
+      "choices": ["to hear", "to hearing", "hearing", "to heard"],
+      "answer": "to hearing"
+    },
+    {
+      "question": "She is _____ (more tall/taller) than her brother.",
+      "choices": ["more tall", "taller", "tall", "tallest"],
+      "answer": "taller"
+    },
+    {
+      "question": "They are going _____ (on/for/to) a trip next week.",
+      "choices": ["on", "for", "to", "in"],
+      "answer": "on"
+    },
+    {
+      "question": "Please _____ (bring/take) me a glass of water.",
+      "choices": ["bring", "take", "brought", "took"],
+      "answer": "bring"
+    },
+    {
+      "question": "She _____ (have/has) a lot of friends.",
+      "choices": ["have", "has", "is having", "had"],
+      "answer": "has"
+    },
+    {
+      "question": "I _____ (can/may) swim when I was five years old.",
+      "choices": ["can", "could", "may", "might"],
+      "answer": "could"
+    },
+    {
+      "question": "The house was _____ (build/built) last year.",
+      "choices": ["build", "built", "building", "to build"],
+      "answer": "built"
+    },
+    {
+      "question": "I _____ (am/was) very tired last night.",
+      "choices": ["am", "was", "is", "will be"],
+      "answer": "was"
+    },
+    {
+      "question": "_____ (Is/Are) you coming to the party?",
+      "choices": ["Is", "Are", "Will", "Has"],
+      "answer": "Are"
+    },
+    {
+      "question": "She is _____ (most/mostly) known for her acting skills.",
+      "choices": ["most", "mostly", "much", "more"],
+      "answer": "most"
+    },
+    {
+      "question": "He _____ (studies/study) English every day.",
+      "choices": ["studies", "study", "studied", "is studying"],
+      "answer": "studies"
+    },
+    {
+      "question": "I _____ (meet/met) him at the conference last year.",
+      "choices": ["meet", "met", "meeting", "meets"],
+      "answer": "met"
+    },
+    {
+      "question": "They have _____ (finish/finished) their homework.",
+      "choices": ["finish", "finished", "finishing", "to finish"],
+      "answer": "finished"
+    },
+    {
+      "question": "He _____ (can/could) speak three languages fluently.",
+      "choices": ["can", "could", "may", "might"],
+      "answer": "can"
+    },
+    {
+      "question": "She _____ (was/is/are) happy with the results.",
+      "choices": ["was", "is", "are", "will be"],
+      "answer": "is"
+    },
+    {
+      "question": "I _____ (have/has) been living here since 2010.",
+      "choices": ["have", "has", "had", "am"],
+      "answer": "have"
+    },
+    {
+      "question": "_____ (Do/Does) they know how to play the piano?",
+      "choices": ["Do", "Does", "Did", "Is"],
+      "answer": "Do"
+    },
+    {
+      "question": "_____ (He/His) house is located on the corner.",
+      "choices": ["He", "His", "Him", "Himself"],
+      "answer": "His"
     }
   ]
 }
