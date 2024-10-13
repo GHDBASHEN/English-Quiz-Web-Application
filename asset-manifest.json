@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/English-Quiz-Web-Application/static/css/main.123a8cff.css",
-    "main.js": "/English-Quiz-Web-Application/static/js/main.47011caa.js",
+    "main.js": "/English-Quiz-Web-Application/static/js/main.d76b464b.js",
     "static/js/453.ed3810f9.chunk.js": "/English-Quiz-Web-Application/static/js/453.ed3810f9.chunk.js",
     "static/media/trophy.png": "/English-Quiz-Web-Application/static/media/trophy.d5210569c0787955f6b3.png",
     "index.html": "/English-Quiz-Web-Application/index.html",
     "main.123a8cff.css.map": "/English-Quiz-Web-Application/static/css/main.123a8cff.css.map",
-    "main.47011caa.js.map": "/English-Quiz-Web-Application/static/js/main.47011caa.js.map",
+    "main.d76b464b.js.map": "/English-Quiz-Web-Application/static/js/main.d76b464b.js.map",
     "453.ed3810f9.chunk.js.map": "/English-Quiz-Web-Application/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.123a8cff.css",
-    "static/js/main.47011caa.js"
+    "static/js/main.d76b464b.js"
   ]
 }
