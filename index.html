@@ -1,1 +1,250 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/English-Quiz-Web-Application/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/English-Quiz-Web-Application/logo192.png"/><link rel="manifest" href="/English-Quiz-Web-Application/manifest.json"/><title>React App</title><script defer="defer" src="/English-Quiz-Web-Application/static/js/main.d76b464b.js"></script><link href="/English-Quiz-Web-Application/static/css/main.123a8cff.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/English-Quiz-Web-Application/V02/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Awesome Quiz Application"/><link rel="apple-touch-icon" href="/English-Quiz-Web-Application/V02/logo192.png"/><link rel="manifest" href="/English-Quiz-Web-Application/V02/manifest.json"/><title>Awesome Quiz Application</title><script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script><script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script><script src="https://unpkg.com/@babel/standalone/babel.js" defer="defer"></script><script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><script defer="defer" src="/English-Quiz-Web-Application/V02/static/js/main.56cbda06.js"></script><link href="/English-Quiz-Web-Application/V02/static/css/main.e6c13ad2.css" rel="stylesheet"></head><body class="bg-blue-500 flex items-center justify-center min-h-screen"><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/babel">function App() {
+        const [currentQuestion, setCurrentQuestion] = React.useState(0);
+        const [timeLeft, setTimeLeft] = React.useState(300);
+        const questions = [
+          {
+            question: "She _____ (go) to the market yesterday.",
+            options: ["goes", "gone", "went", "going"],
+            correctAnswer: 2,
+          },
+          {
+            question: "The cat is hiding _____ the table.",
+            options: ["on", "in", "under", "over"],
+            correctAnswer: 2,
+          },
+          {
+            question: "He has _____ (write) the letter already.",
+            options: ["wrote", "written", "writes", "writing"],
+            correctAnswer: 1,
+          },
+          {
+            question: "The books _____ (be) on the shelf.",
+            options: ["is", "are", "was", "were"],
+            correctAnswer: 1,
+          },
+          {
+            question: "She runs _____ (fast/fastly) every morning.",
+            options: ["fast", "fastly", "quick", "quickly"],
+            correctAnswer: 0,
+          },
+          {
+            question: "I _____ (not see) him for a week.",
+            options: ["have not seen", "did not saw", "has not seen", "am not seeing"],
+            correctAnswer: 0,
+          },
+          {
+            question: "If I _____ (be) you, I would go to the party.",
+            options: ["am", "was", "were", "been"],
+            correctAnswer: 2,
+          },
+          {
+            question: "They _____ (play) football when it started to rain.",
+            options: ["were playing", "played", "are playing", "had played"],
+            correctAnswer: 0,
+          },
+          {
+            question: "I have lived here _____ five years.",
+            options: ["since", "for", "in", "at"],
+            correctAnswer: 1,
+          },
+          {
+            question: "The project will be completed _____ next week.",
+            options: ["by", "in", "on", "at"],
+            correctAnswer: 0,
+          },
+          {
+            question: "This is the _____ (good) movie I have ever seen.",
+            options: ["better", "best", "good", "goodest"],
+            correctAnswer: 1,
+          },
+          {
+            question: "She speaks English _____ (good/well).",
+            options: ["good", "well", "better", "best"],
+            correctAnswer: 1,
+          },
+          {
+            question: "He _____ (drive) to work every day.",
+            options: ["drives", "drove", "driving", "drive"],
+            correctAnswer: 0,
+          },
+          {
+            question: "We _____ (finish) the work by the time she arrives.",
+            options: ["will finish", "will have finished", "finished", "are finishing"],
+            correctAnswer: 1,
+          },
+          {
+            question: "She was born _____ 1990.",
+            options: ["in", "on", "at", "by"],
+            correctAnswer: 0,
+          },
+          {
+            question: "_____ (Do/Does) she like pizza?",
+            options: ["Do", "Does", "Did", "Is"],
+            correctAnswer: 1,
+          },
+          {
+            question: "The food tastes _____ (delicious/deliciously).",
+            options: ["delicious", "deliciously", "well", "better"],
+            correctAnswer: 0,
+          },
+          {
+            question: "He _____ (leave) before I arrived.",
+            options: ["leaves", "left", "had left", "is leaving"],
+            correctAnswer: 2,
+          },
+          {
+            question: "I am looking forward _____ (to hear/to hearing) from you.",
+            options: ["to hear", "to hearing", "hearing", "to heard"],
+            correctAnswer: 1,
+          },
+          {
+            question: "She is _____ (more tall/taller) than her brother.",
+            options: ["more tall", "taller", "tall", "tallest"],
+            correctAnswer: 1,
+          },
+          {
+            question: "They are going _____ (on/for/to) a trip next week.",
+            options: ["on", "for", "to", "in"],
+            correctAnswer: 0,
+          },
+          {
+            question: "Please _____ (bring/take) me a glass of water.",
+            options: ["bring", "take", "brought", "took"],
+            correctAnswer: 0,
+          },
+          {
+            question: "She _____ (have/has) a lot of friends.",
+            options: ["have", "has", "is having", "had"],
+            correctAnswer: 1,
+          },
+          {
+            question: "I _____ (can/may) swim when I was five years old.",
+            options: ["can", "could", "may", "might"],
+            correctAnswer: 1,
+          },
+          {
+            question: "The house was _____ (build/built) last year.",
+            options: ["build", "built", "building", "to build"],
+            correctAnswer: 1,
+          },
+          {
+            question: "I _____ (am/was) very tired last night.",
+            options: ["am", "was", "is", "will be"],
+            correctAnswer: 1,
+          },
+          {
+            question: "_____ (Is/Are) you coming to the party?",
+            options: ["Is", "Are", "Will", "Has"],
+            correctAnswer: 1,
+          },
+          {
+            question: "She is _____ (most/mostly) known for her acting skills.",
+            options: ["most", "mostly", "much", "more"],
+            correctAnswer: 0,
+          },
+          {
+            question: "He _____ (studies/study) English every day.",
+            options: ["studies", "study", "studied", "is studying"],
+            correctAnswer: 0,
+          },
+          {
+            question: "I _____ (meet/met) him at the conference last year.",
+            options: ["meet", "met", "meeting", "meets"],
+            correctAnswer: 1,
+          },
+          {
+            question: "They have _____ (finish/finished) their homework.",
+            options: ["finish", "finished", "finishing", "to finish"],
+            correctAnswer: 1,
+          },
+          {
+            question: "He _____ (can/could) speak three languages fluently.",
+            options: ["can", "could", "may", "might"],
+            correctAnswer: 0,
+          },
+          {
+            question: "She _____ (was/is/are) happy with the results.",
+            options: ["was", "is", "are", "will be"],
+            correctAnswer: 1,
+          },
+          {
+            question: "I _____ (have/has) been living here since 2010.",
+            options: ["have", "has", "had", "am"],
+            correctAnswer: 0,
+          },
+          {
+            question: "_____ (Do/Does) they know how to play the piano?",
+            options: ["Do", "Does", "Did", "Is"],
+            correctAnswer: 0,
+          },
+          {
+            question: "_____ (He/His) house is located on the corner.",
+            options: ["He", "His", "Him", "Himself"],
+            correctAnswer: 1,
+          },
+        ];
+
+        const handleNextQuestion = () => {
+          if (currentQuestion < questions.length - 1) {
+            setCurrentQuestion(currentQuestion + 1);
+          }
+        };
+
+        const handleTimeLeft = () => {
+          if (timeLeft > 0) {
+            setTimeLeft(timeLeft - 1);
+          }
+        };
+
+        React.useEffect(() => {
+          const intervalId = setInterval(handleTimeLeft, 1000);
+          return () => clearInterval(intervalId);
+        }, [timeLeft]);
+
+        return (
+          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+            <div className="flex justify-between items-center mb-4">
+              <h1 className="text-lg font-bold">Awesome Quiz Application</h1>
+              <div className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold">
+                Time Left{" "}
+                <span className="bg-gray-800 text-white rounded-full px-2 py-1 ml-1">
+                  {timeLeft.toString().padStart(2, "0")}
+                </span>
+              </div>
+            </div>
+            <h2 className="text-xl font-bold mb-4">
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </h2>
+            <div className="space-y-2">
+              {questions[currentQuestion].options.map((option, index) => (
+                <div
+                  key={index}
+                  className={`border rounded-lg p-2 ${
+                    index === questions[currentQuestion].correctAnswer
+                      ? "bg-green-100 border-green-300"
+                      : "border-blue-300"
+                  }`}
+                >
+                  {option}
+                  {index === questions[currentQuestion].correctAnswer && (
+                    <i className="fas fa-check text-green-500"></i>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-gray-600">
+                {currentQuestion + 1} of {questions.length} Questions
+              </span>
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                onClick={handleNextQuestion}
+              >
+                Next Question
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));</script></body></html>
