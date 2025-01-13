@@ -4,7 +4,8 @@ Welcome to the **English Quiz Web Application**! This React-based app is designe
 
 # New UI Enhancements
 
-![{0DDF74F6-C871-41B2-9CF5-E32571C463A2}](https://github.com/user-attachments/assets/999dd982-b417-4343-a76e-5e735325227f)
+![{F7668392-9CFA-42D6-BC3F-71DC0BB64CA5}](https://github.com/user-attachments/assets/c56928fc-3d22-4849-9ac2-3992c9c0e863)
+
 
 # Test Run
 
