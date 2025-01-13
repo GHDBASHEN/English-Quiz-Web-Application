@@ -2,9 +2,14 @@
 
 Welcome to the **English Quiz Web Application**! This React-based app is designed to help individuals improve their English language skills through engaging quizzes. The app provides a series of questions that test various aspects of English knowledge, including vocabulary, grammar, and comprehension.
 
-# New UI Enhancements Coming Soon..
+# New UI Enhancements
 
-![image](https://github.com/user-attachments/assets/089d9236-d984-4a0f-9d93-49df2696a11d)
+![{0DDF74F6-C871-41B2-9CF5-E32571C463A2}](https://github.com/user-attachments/assets/999dd982-b417-4343-a76e-5e735325227f)
+
+# Test Run
+
+https://github.com/user-attachments/assets/bb19fc82-ad7f-4c5b-b51a-0dff6f32d80c
+
 
 
 ## Live Demo
