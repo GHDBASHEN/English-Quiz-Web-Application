@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Awesome Quiz Application" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Awesome Quiz Application</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  </head>
+  <body class="bg-blue-500 flex items-center justify-center min-h-screen">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/babel">
+      function App() {
+        const [currentQuestion, setCurrentQuestion] = React.useState(0);
+        const [timeLeft, setTimeLeft] = React.useState(60);
+        const questions = [
+          {
+            question: "What does HTML stand for?",
+            options: [
+              "Hyper Text Preprocessor",
+              "Hyper Text Markup Language",
+              "Hyper Text Multiple Language",
+              "Hyper Tool Multi Language",
+            ],
+            correctAnswer: 1,
+          },
+          {
+            question: "What does CSS stand for?",
+            options: [
+              "Cascading Style Sheets",
+              "Cascading Style Script",
+              "Cascading Style Server",
+              "Cascading Style Service",
+            ],
+            correctAnswer: 0,
+          },
+          {
+            question: "What does JavaScript stand for?",
+            options: [
+              "Java Script",
+              "Java Server",
+              "Java Service",
+              "Java Style",
+            ],
+            correctAnswer: 0,
+          },
+          {
+            question: "What does React stand for?",
+            options: [
+              "React JavaScript Library",
+              "React Java Library",
+              "React Server",
+              "React Service",
+            ],
+            correctAnswer: 0,
+          },
+          {
+            question: "What does Node stand for?",
+            options: [
+              "Node.js",
+              "Node Java",
+              "Node Server",
+              "Node Service",
+            ],
+            correctAnswer: 0,
+          },
+        ];
+
+        const handleNextQuestion = () => {
+          if (currentQuestion < questions.length - 1) {
+            setCurrentQuestion(currentQuestion + 1);
+          }
+        };
+
+        const handleTimeLeft = () => {
+          if (timeLeft > 0) {
+            setTimeLeft(timeLeft - 1);
+          }
+        };
+
+        React.useEffect(() => {
+          const intervalId = setInterval(handleTimeLeft, 1000);
+          return () => clearInterval(intervalId);
+        }, [timeLeft]);
+
+        return (
+          <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+            <div className="flex justify-between items-center mb-4">
+              <h1 className="text-lg font-bold">Awesome Quiz Application</h1>
+              <div className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold">
+                Time Left{" "}
+                <span className="bg-gray-800 text-white rounded-full px-2 py-1 ml-1">
+                  {timeLeft.toString().padStart(2, "0")}
+                </span>
+              </div>
+            </div>
+            <h2 className="text-xl font-bold mb-4">
+              {currentQuestion + 1}. {questions[currentQuestion].question}
+            </h2>
+            <div className="space-y-2">
+              {questions[currentQuestion].options.map((option, index) => (
+                <div
+                  key={index}
+                  className={`border rounded-lg p-2 ${
+                    index === questions[currentQuestion].correctAnswer
+                      ? "bg-green-100 border-green-300"
+                      : "border-blue-300"
+                  }`}
+                >
+                  {option}
+                  {index === questions[currentQuestion].correctAnswer && (
+                    <i className="fas fa-check text-green-500"></i>
+                  )}
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-gray-600">
+                {currentQuestion + 1} of {questions.length} Questions
+              </span>
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                onClick={handleNextQuestion}
+              >
+                Next Question
+              </button>
+            </div>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
+
